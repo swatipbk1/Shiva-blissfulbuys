@@ -1,0 +1,32 @@
+.panel {
+  background-color: #4C5270;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin to separate it from other sections */
+}
+
+.panel-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.panel-item {
+  margin-right: 10px;
+}
+
+.panel-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.panel-link:hover {
+  color: #FFD700; /* Change color on hover */
+}
+
+.panel-pipe {
+  color: white;
+}

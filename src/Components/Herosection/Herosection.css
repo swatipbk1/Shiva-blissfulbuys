@@ -1,0 +1,9 @@
+@keyframes scrollAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%); /* Adjust this value based on the number of images */
+    }
+  }
+  

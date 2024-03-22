@@ -1,0 +1,107 @@
+/* Navbar.css */
+/* Container styling */
+.container {
+    max-height: 2000px; /* Set max width to 1001 pixels */
+    margin: 0 auto; /* Center the container */
+  }
+  /* Navbar container */
+  .navbar {
+    position: fixed; /* Fixed position to attach to the top */
+    top: 0; /* Attach to the top of the page */
+    left: 0; /* Position from the left */
+    right: 0; /* Position from the right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#001f3f; /* Subtle blue background color */
+    padding: 10px 20px; /* Adjust padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    width: 100vw;
+    color:white
+  }
+  
+  /* Logo styling */
+  .logo {
+    width: 120px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    background-image: url('path/to/blissfulbuys-logo.png'); /* Add your logo */
+    background-size: cover;
+    background-color: #ffcc00; /* Yellow background color */
+    color: #ff0000; /* Red text color */
+    padding: 5px 10px; /* Padding */
+    font-size: 1.2rem; /* Font size */
+    font-weight: bold; /* Bold font */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Brand name styling */
+  .brand-name {
+    font-size: 24px; /* Adjust font size */
+    color: #ffffff; /* White text color */
+    margin-left: 10px; /* Add space between logo and brand name */
+  }
+  
+  /* Search input styling */
+  .search-input {
+    padding: 10px;
+    border: 1px solid #cccccc; /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px;
+    width: 300px; /* Adjust input width */
+  }
+  
+  /* Search icon styling */
+  .search-icon {
+    padding: 8px;
+    background-color: #ff4500; /* Search icon background color */
+    border-top-right-radius: 20px; /* Rounded corners */
+    border-bottom-right-radius: 20px; /* Rounded corners */
+  }
+  
+  /* Cart styling */
+  .nav-cart {
+    margin-right: 20px; /* Add margin from the right */
+  }
+  
+  /* Cart and location icon styling */
+  .nav-cart,
+  .navaddress {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-cart:hover,
+  .navaddress:hover {
+    color: #ff4500; /* Change color on hover */
+  }
+  
+  /* Panel styling */
+  .panel {
+    background-color: #f8f8f8; /* Panel background color */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  /* Panel options styling */
+  .panel-options p {
+    margin: 5px 0;
+  }
+  
+  /* Panel deals styling */
+  .panel-deals {
+    font-weight: bold;
+    color: #ff4500; /* Text color */
+  }
+  
+  /* Panel all styling */
+  .panel-all {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .panel-all:hover {
+    color: #ff4500; /* Change color on hover */
+  }
+  

@@ -1,0 +1,46 @@
+/* Footer.css */
+
+.footer {
+    background-color: #001f3f; /* Dark blue background color */
+    padding: 20px;
+    min-height: calc(100vh - 100px); /* Adjusted minimum height */
+    width: 100vw;
+    position: relative; /* Set position to relative */
+    color:white
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    color: #ffffff; /* White heading color */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: auto; /* Align to bottom */
+    width: 100%; /* Full width */
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* Stick to the bottom */
+}
+
+.copyright p {
+    font-size: 12px;
+    color:white /* White text color */
+}
