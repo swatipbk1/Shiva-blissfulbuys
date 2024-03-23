@@ -47,4 +47,15 @@ const App = () => {
           <Route path="/" element={<Products products={products} onDelete={deleteProduct} onUpdate={updateProduct} />} />
 
           {/* Manually define routes for each category */}
-         
+          <Route path="/category/Appliances" element={<CategoryProducts category="Appliances" />} />
+        
+}
+
+const CategoryProducts = ({ category }) => {
+  // Filter products based on category
+  const filteredProducts = initialProducts.filter(product => product.category === category);
+
+  return <Products products={filteredProducts} onDelete={null} onUpdate={null} />;
+}
+
+export default App;
