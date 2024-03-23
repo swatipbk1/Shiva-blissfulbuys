@@ -148,5 +148,62 @@ export const products = [
         category: 'Electronics and Gadgets', 
     },
     { 
-        
+        id: 'product9',
+        url: 'https://m.media-amazon.com/images/I/813vxzjiChL.__AC_SY445_SX342_QL70_FMwebp_.jpg', 
+        detailUrl: 'https://m.media-amazon.com/images/I/813vxzjiChL.__AC_SY445_SX342_QL70_FMwebp_.jpg',
+        title: {
+            shortTitle: 'DAYBETTER Led Strip Lights',
+            longTitle: 'DAYBETTER Led Strip Lights 130ft (2 Rolls of 65.6ft) Color Changing Lights Strip for Bedroom, Desk, Indoor Room Bedroom Valentine Decor, with Remote and 24V Power Supply'
+        }, 
+        price: {
+            mrp: Math.floor(Math.random() * 1000) + 500,
+            cost: Math.floor(Math.random() * 800) + 200,
+            discount: Math.floor(Math.random() * 50) + '%'
+        },
+        description: 'Smart APP and IR remote control；The 130 feet led strip lights support both app DAYBETTER and 24 keys ir remote for control, Different modes can be chosen, like Flashing, Quick, Jump, Fade, etc. You can freely choose to control 16 million colors. Music sync: Led lights strip color changing sync to music by smart phone with App, make your party up to the high peak, light up your life and makes life more colorful and wonderful. Smart Timing Settings;With timer function,The led strip has color memory and setting the time function,so it can automatically turn on and off',
+        discount: 'From ₹499', 
+        tagline: 'Kubra, Nova & more' ,
+        category: 'Furniture and Decor',
+    },
+
+    { 
+        id: 'product10',
+        url: 'https://m.media-amazon.com/images/I/71DpSzy8EHL._AC_SX425_.jpg',
+        detailUrl: 'https://m.media-amazon.com/images/I/71DpSzy8EHL._AC_SX425_.jpg', 
+        title: {
+            shortTitle: 'Kids Tablet, 7 inch Android 11 Tablet for Kids',
+            longTitle: 'Kids Tablet, 7 inch Android 11 Tablet for Kids, 3GB RAM 32GB ROM, Toddler Tablet with Bluetooth, WiFi, Parental Control, Dual Camera, GMS, Shockproof Case, Kids App Pre-Installed'
+        }, 
+        price: {
+            mrp: 680,
+            cost: 400,
+            discount: '25%'
+        },
+        description: '1024x600 IPS FHD touch screen, The latest Android 11 OS, 3GB RAM 32GB ROM storage (up to 128GB expandable) that easily handle multiple tasks, kids tablet provides plenty of space to download games, music and videos. You can download apps from Google play store, such as YouTube, Netflix, ABCmouse etc. Parental Control: Pre-installed with the iWaWa app specially designed for kids. You hand-pick content for your kids, control screen time and ensure they are browsing safe websites. These settings can be adjusted as kids grow with content tailored to their age. (Appropriate for children over 3 years old)',
+        discount: 'Upto 30% Off', 
+        tagline: 'Must-have Gadgets' ,
+        category: 'Electronics and Gadgets',
+    },
+    { 
+        id: 'product11',
+        url: 'https://m.media-amazon.com/images/I/81ba2Tv7HcL.__AC_SY300_SX300_QL70_FMwebp_.jpg',
+        detailUrl: 'https://m.media-amazon.com/images/I/81ba2Tv7HcL.__AC_SY300_SX300_QL70_FMwebp_.jpg', 
+        title: {
+            shortTitle: 'OLIXIS Dresser for Bedroom',
+            longTitle: 'OLIXIS Dresser for Bedroom, Storage with 5 Drawer Organizer Closet Chest Small Clothes Fabric Cabinet, Kids Furniture Drawer Binis, Nightstand for Bedroom, Living Room, Nursery, Entryway'
+        }, 
+        price: {
+            mrp: 550,
+            cost: 350,
+            discount: '36%'
+        },
+        description: 'Just place this low space-saver drawer cabinet in the closet as bedroom furniture or nightstand to offer a home for workout gear, blankets, and lingerie; place it in the nursery as a chest of drawers to store baby clothes and baby stuff; place storage drawer in the entryway for storage saving unit for frequently used items. Large Capacity: This small dresser offers 5 drawers to provide sufficient space for organizing daily necessities. 2 L and 3 M drawers are designed to satisfy your various storage needs. The wooden top of the bedroom portable dresser is great for keeping the most-used items within your reach. With plentiful space to organize, your room will always be kept in perfect order. Drawer dimensions: L (11.8" L x 11.8"W x 8.5" H) ；M（12"L x 11.4"W x 8.3" H） Black',
+        discount: 'Limited Stock', 
+        tagline: 'Organize in Style' ,
+        category: 'Apparels',
+
+    }
+    
+]
+
 
