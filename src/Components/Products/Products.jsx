@@ -10,7 +10,25 @@ const Products = ({ products, onDelete, onUpdate }) => {
           <div className="product-card" key={product.id}>
             <img src={product.url} alt={product.title.shortTitle} />
             <div className="product-details">
-           
+              <h3>{product.title.shortTitle}</h3>
+              <p>{product.description}</p>
+              <div className="price-details">
+                <span className="mrp">MRP: ₹{product.price.mrp}</span>
+                <span className="cost">Price: ₹{product.price.cost}</span>
+                <span className="discount">Discount: {product.price.discount}</span>
+              </div>
+              <div className="product-actions">
+                <button onClick={() => onDelete(product.id)}>Delete</button>
+                <button onClick={() => onUpdate(product.id)}>Update</button>
+              </div>
+              <a href={product.detailUrl} target="_blank" rel="noopener noreferrer">View Details</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 // Define prop types for Products component
 Products.propTypes = {
