@@ -71,9 +71,4 @@
     cursor: pointer;
     transition: color 0.3s ease;
   }
-  
-  .nav-cart:hover,
-  .navaddress:hover {
-    color: #ff4500; /* Change color on hover */
-  }
  
