@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes for prop validation
 import './Products.css'; // Import CSS file for styling
 
-const Products = ({ products }) => {
+const Products = ({ products, onDelete, onUpdate }) => {
   return (
     <div className="products-wrapper">
       <div className="products-container">
@@ -16,6 +16,10 @@ const Products = ({ products }) => {
                 <span className="mrp">MRP: ₹{product.price.mrp}</span>
                 <span className="cost">Price: ₹{product.price.cost}</span>
                 <span className="discount">Discount: {product.price.discount}</span>
+              </div>
+              <div className="product-actions">
+                <button onClick={() => onDelete(product.id)}>Delete</button>
+                <button onClick={() => onUpdate(product.id)}>Update</button>
               </div>
               <a href={product.detailUrl} target="_blank" rel="noopener noreferrer">View Details</a>
             </div>
@@ -43,7 +47,9 @@ Products.propTypes = {
       }).isRequired,
       detailUrl: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  onDelete: PropTypes.func.isRequired,
+  onUpdate: PropTypes.func.isRequired
 };
 
 export default Products;
