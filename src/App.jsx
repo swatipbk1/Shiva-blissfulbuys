@@ -48,7 +48,22 @@ const App = () => {
 
           {/* Manually define routes for each category */}
           <Route path="/category/Appliances" element={<CategoryProducts category="Appliances" />} />
-        
+          <Route path="/category/Fitness%20Equipment" element={<CategoryProducts category="Fitness Equipment" />} />
+          <Route path="/category/Electronics%20and%20Gadgets" element={<CategoryProducts category="Electronics and Gadgets" />} />
+          <Route path="/category/Food%20%26%20Groceries" element={<CategoryProducts category="Food & Groceries" />} />
+          <Route path="/category/Furniture%20and%20Decor" element={<CategoryProducts category="Furniture and Decor" />} />
+          <Route path="/category/Apparels" element={<CategoryProducts category="Apparels" />} />
+
+          {/* Route for Review Order Page */}
+          <Route path="/review-order" element={<ReviewOrderPage />} />
+
+          {/* Route for Not Found */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 const CategoryProducts = ({ category }) => {
