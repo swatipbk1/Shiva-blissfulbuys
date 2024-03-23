@@ -71,4 +71,37 @@
     cursor: pointer;
     transition: color 0.3s ease;
   }
- 
+  
+  .nav-cart:hover,
+  .navaddress:hover {
+    color: #ff4500; /* Change color on hover */
+  }
+  
+  /* Panel styling */
+  .panel {
+    background-color: #f8f8f8; /* Panel background color */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  /* Panel options styling */
+  .panel-options p {
+    margin: 5px 0;
+  }
+  
+  /* Panel deals styling */
+  .panel-deals {
+    font-weight: bold;
+    color: #ff4500; /* Text color */
+  }
+  
+  /* Panel all styling */
+  .panel-all {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .panel-all:hover {
+    color: #ff4500; /* Change color on hover */
+  }
+  
