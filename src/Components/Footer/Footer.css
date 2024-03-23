@@ -1,0 +1,15 @@
+/* Footer.css */
+
+.footer {
+    background-color: #001f3f; /* Dark blue background color */
+    padding: 20px;
+    min-height: calc(100vh - 100px); /* Adjusted minimum height */
+    width: 100vw;
+    position: relative; /* Set position to relative */
+    color:white
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow flex items to wrap */
