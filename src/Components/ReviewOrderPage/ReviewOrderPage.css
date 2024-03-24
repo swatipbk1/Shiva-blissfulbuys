@@ -45,4 +45,41 @@
     font-weight: bold;
   }
   
- 
+  .card-text {
+    font-size: 16px;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  .btn-warning:hover {
+    background-color: #ffcd38;
+    border-color: #ffcd38;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Footer */
+  .card-footer {
+    background-color: #f8f9fa;
+    padding: 15px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      height: 25px;
+      width: auto;
+    }
+  }
+  
