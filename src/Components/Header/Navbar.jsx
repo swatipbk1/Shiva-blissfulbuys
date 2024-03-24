@@ -38,4 +38,17 @@ const Navbar = () => {
           <BsCart className="cart-icon" />
           <span>Cart</span>
         </div>
-        
+        <div className="nav-blissfulbuys border">
+          <FaShoppingBag className="blissfulbuys-icon" />
+          <span>BlissfulBuys</span>
+        </div>
+      </div>
+      <div className="panel">
+        <div className="panel-all">
+          <BsSearch className="panel-icon" />
+          <span>All</span>
+       
+  );
+}
+
+export default Navbar;
