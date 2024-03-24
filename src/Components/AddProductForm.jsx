@@ -28,4 +28,16 @@ const AddProductForm = ({ onAddProduct }) => {
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
       <label>
-     
+        Description:
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
+      </label>
+      <label>
+        Price:
+        <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
+      </label>
+      <button type="submit">Add Product</button>
+    </form>
+  );
+};
+
+export default AddProductForm;
