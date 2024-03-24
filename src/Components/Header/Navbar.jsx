@@ -49,10 +49,8 @@ const Navbar = () => {
           <span>All</span>
         </div>
         <div className="panel-options">
-          <p>Today's Deals</p>
-          <p>Customer Service</p>
-          <p>Registry</p>
-          <p>Gift Cards</p>
+         
+          <p></p>
           <p>Sell</p>
         </div>
         <div className="panel-deals">
