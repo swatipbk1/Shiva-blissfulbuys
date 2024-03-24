@@ -15,4 +15,43 @@ function ReviewOrderPage() {
           <img src="img/amazon_logo_white.png" height="30" width="100" alt="amazon logo white" />
         </a>
 
-      
+        {/* Navbar Toggler */}
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Navbar Content */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          {/* Search Form */}
+          <form className="form-inline px-lg-5" noValidate method="get">
+            {/* Dropdown for Category */}
+            <div className="input-group">
+              {/* Dropdown Button */}
+              <div className="input-group-prepend">
+                <div className="dropdown">
+                  <button className="btn btn-secondary dropdown-toggle" name="btnCategory" type="button"
+                    id="btnCategoryDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All
+                  </button>
+                  {/* Dropdown Menu */}
+                  <div className="dropdown-menu" aria-labelledby="btnCategoryDropdownMenu">
+                    <a className="dropdown-item" href="#">All</a>
+                    <a className="dropdown-item" href="#">Smartphone</a>
+                    <a className="dropdown-item" href="#">Kitchen Hardware</a>
+                    <a className="dropdown-item" href="#">Prime Deals</a>
+                    <a className="dropdown-item" href="#">Book</a>
+                  </div>
+                </div>
+              </div>
+              {/* Search Input */}
+              <input type="text" className="form-control" size="50" name="query" id="query" />
+              <input type="text" name="category" id="category" value="book" hidden />
+              {/* Search Button */}
+              <div className="input-group-append">
+                <button type="submit" className="btn btn-warning">
+                  <i className="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
