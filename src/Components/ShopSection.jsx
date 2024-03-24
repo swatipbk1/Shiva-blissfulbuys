@@ -10,4 +10,11 @@ const ShopSection = () => {
       <ProductBox title="Luxury knits & bedding" image="box3.jpg" />
       <ProductBox title="Designer Clothing" image="box4.jpg" />
       <ProductBox title="Electronics Devices" image="box5.jpg" />
-     
+      <ProductBox title="Party Supplies" image="box6.jpg" />
+      <ProductBox title="Non-Fiction Content" image="box7.jpg" />
+      <ProductBox title="New Arrivals in Toys" image="box8.jpg" />
+    </div>
+  );
+}
+
+export default ShopSection;
