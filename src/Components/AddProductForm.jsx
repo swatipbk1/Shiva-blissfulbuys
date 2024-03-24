@@ -29,4 +29,7 @@ const AddProductForm = ({ onAddProduct }) => {
       </label>
       <label>
         Description:
-      
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
+      </label>
+      <label>
+        
