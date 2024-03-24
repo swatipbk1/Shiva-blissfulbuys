@@ -55,3 +55,56 @@ function ReviewOrderPage() {
               </div>
             </div>
           </form>
+
+          {/* Other Navbar Items */}
+          <ul className="navbar-nav">
+            {/* Preferred Language Dropdown */}
+            <li className="nav-item dropdown px-2">
+              <a className="nav-link" href="#" id="prefLanguageDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i className="fas fa-2x fa-language"></i>
+              </a>
+              {/* Language Dropdown Menu */}
+              <div className="dropdown-menu" aria-labelledby="prefLanguageDropdown">
+                {/* Language Options */}
+                <form className="p-3">
+                  {/* Language Options Here */}
+                </form>
+              </div>
+            </li>
+            {/* User Account Dropdown */}
+            <li className="nav-item dropdown px-2">
+              <a className="nav-link" href="login.html" id="userAccount" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i className="fas fa-2x fa-user-circle"></i>
+              </a>
+              {/* User Account Dropdown Menu */}
+              <div className="dropdown-menu px-3" aria-labelledby="userAccount">
+                {/* User Account Options Here */}
+              </div>
+            </li>
+            {/* Shopping Cart */}
+            <li className="nav-item px-2">
+              <a className="nav-link" href="#" aria-disabled="true">
+                <i className="fas fa-2x text-light fa-shopping-cart"></i>
+                <span className="badge badge-warning badge-pill">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Review Order */}
+      <div className="container my-5">
+        {/* Progress Status */}
+        {/* Progress Bar */}
+        {/* Review Order Content */}
+      </div>
+
+      {/* Optional JavaScript */}
+      {/* JavaScript Imports */}
+    </>
+  );
+}
+
+export default ReviewOrderPage;
