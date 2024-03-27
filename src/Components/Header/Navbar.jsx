@@ -6,11 +6,6 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <header className="header">
-      <div className="navbar">
-        <div className="nav-logo border">
-          <div className="logo">BlissfulBuys</div>
-        </div>
         <div className="navaddress border">
           <p className="add-first">Deliver to</p>
           <div className="add-icon"></div>
