@@ -1,0 +1,111 @@
+/* Footer styles */
+.footer {
+  background-color: rgb(4, 8, 84); /* Darker background color */
+  color: #fff;
+  padding: 50px 20px; /* Added padding to the left and right sides */
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.footer h5 {
+  color: #fff;
+  font-size: 1.8em; /* Increase font size for headings */
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1.1em; /* Increase font size for paragraphs */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+  line-height: 1.5; /* Set line height for better readability */
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em; /* Increase font size for links */
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Search form styles */
+.search-form {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-input {
+  width: 70%;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the opacity to make it slightly off-white */
+  color: #fff;
+  font-size: 1.1em; /* Increase font size for input */
+  transition: box-shadow 0.3s; /* Add transition for box shadow */
+}
+
+.search-input:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add box shadow on hover */
+}
+
+.search-button {
+  width: calc(30% - 10px);
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .search-input,
+  .search-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Additional Styles for Enhanced Footer */
+.footer-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111; /* Darker background color */
+  padding: 0;
+}
+
+.footer-bottom p {
+  font-size: 1em; /* Adjust font size */
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

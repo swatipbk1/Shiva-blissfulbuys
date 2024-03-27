@@ -1,76 +1,50 @@
-import React, { useState, useEffect } from 'react';
+// App.js
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Header/Navbar';
-import HeroSection from './Components/Herosection/HeroSection';
-import ShopSection from './Components/ShopSection';
-import Panel from './Components/Panel/Panel';
-import Products from './Components/Products/Products';
-import Footer from './Components/Footer/Footer';
-import NotFoundPage from './Components/PageNotFound/NotFoundPage'; // Import NotFoundPage component
-import ReviewOrderPage from './Components/ReviewOrderPage/ReviewOrderPage'; // Import ReviewOrderPage component
-import { products as initialProducts } from './Components/Products/productdata'; // Import initial product data
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import HeroSection from './components/HeroSection/HeroSection';
+import Products from './components/Pages/Products';
+import SalesReview from './components/Pages/SalesReview/SalesReview';
+import EmployeeManagement from './components/Pages/EmployeeManagement';
+import EmployeeForm from './components/Pages/EmployeeForm';
+import SalesTaskTodo from './components/Pages/SalesTaskTodo';
+import BusinessNews from './components/Pages/BusinessNews';
+import Navigation from './components/Pages/Header/Navigation';
+import Footer from './components/Pages/Footer/Footer';
+import NotFoundPage from './components/PageNotFound/NotFoundPage'; 
+import './App.css'; // Import custom CSS file
 
 const App = () => {
-  // State to hold the products data
-  const [products, setProducts] = useState(initialProducts);
-
-  // Function to delete a product
-  const deleteProduct = (productId) => {
-    setProducts(prevProducts => prevProducts.filter(product => product.id !== productId));
+  const addEmployee = () => {
+    // Function to add an employee
   };
-
-  // Function to update a product
-  const updateProduct = (productId, updatedProductData) => {
-    setProducts(prevProducts => prevProducts.map(product => {
-      if (product.id === productId) {
-        return { ...product, ...updatedProductData };
-      }
-      return product;
-    }));
-  };
-
-  useEffect(() => {
-    // Here you can perform any side effects related to products,
-    // such as fetching data from an API, updating the database, etc.
-    // This effect will run when the component mounts and whenever the products state changes.
-  }, [products]); // Dependency array ensures that the effect runs only when products state changes
 
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Panel products={products} />
-        <HeroSection />
-        <ShopSection />
-        <Routes>
-          {/* Route for Home */}
-          <Route path="/" element={<Products products={products} onDelete={deleteProduct} onUpdate={updateProduct} />} />
-
-          {/* Manually define routes for each category */}
-          <Route path="/category/Appliances" element={<CategoryProducts category="Appliances" />} />
-          <Route path="/category/Fitness%20Equipment" element={<CategoryProducts category="Fitness Equipment" />} />
-          <Route path="/category/Electronics%20and%20Gadgets" element={<CategoryProducts category="Electronics and Gadgets" />} />
-          <Route path="/category/Food%20%26%20Groceries" element={<CategoryProducts category="Food & Groceries" />} />
-          <Route path="/category/Furniture%20and%20Decor" element={<CategoryProducts category="Furniture and Decor" />} />
-          <Route path="/category/Apparels" element={<CategoryProducts category="Apparels" />} />
-
-          {/* Route for Review Order Page */}
-          <Route path="/review-order" element={<ReviewOrderPage />} />
-
-          {/* Route for Not Found */}
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+      <div className="app-container">
+        <Navigation addEmployee={addEmployee} />
+        <div className="content">
+        <div className="top-heading">
+          <h1>Top Headlines</h1>
+          <h2>Real-Time News Coverage: Latest Updates</h2>
+        </div>
+          <Routes>
+            <Route path="/" element={<HeroSection />} />
+            <Route path="/Home" element={<HeroSection />} />
+            <Route path="/ProductsShowcase" element={<Products />} />
+            <Route path="/SalesInsights" element={<SalesReview />} />
+            <Route path="/DigitalHRInsights" element={<EmployeeManagement />} />
+            <Route path="/EmployeesDashboard" element={<EmployeeForm addEmployee={addEmployee} />} />
+            <Route path="/TaskManager" element={<SalesTaskTodo />} />
+            <Route path="/Trends" element={<BusinessNews />} />
+            {/* If none of the above routes match, fallback to Home */}
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
   );
-}
-
-const CategoryProducts = ({ category }) => {
-  // Filter products based on category
-  const filteredProducts = initialProducts.filter(product => product.category === category);
-
-  return <Products products={filteredProducts} onDelete={null} onUpdate={null} />;
-}
+};
 
 export default App;

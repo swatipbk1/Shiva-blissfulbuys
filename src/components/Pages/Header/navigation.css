@@ -1,0 +1,71 @@
+/* Header Navigation styles */
+
+.navbar {
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  color:white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays on top */
+  background-color: rgb(3, 29, 39);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive; /* Apply custom font */
+  font-size: 3.5rem; /* Increased font size for brand (CNN) */
+  font-weight: bold;
+  color: #ff0000;
+  text-transform: uppercase; /* Convert text to uppercase */
+  background-color: rgb(17, 5, 62); /* Set background color to yellow */
+  /* Example styling for CNN logo */
+  /* Add a border and padding around the logo to make it stand out */
+  border: 2px solid #fff;
+  padding: 5px;
+  /* Add a subtle shadow to create depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Make navbar full width */
+  padding: 0 2rem; /* Add horizontal padding */
+}
+
+.nav-item {
+  margin: 0 0.5rem; /* Add equal space around nav items */
+}
+
+.nav-item a {
+  color: #fff; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem; /* Increased font size for nav items */
+  font-weight: bold; /* Set font weight */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.nav-item a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Divider between sections */
+.nav-item:not(:last-child) {
+  border-right: 1px solid #fff; /* Add a vertical divider between nav items */
+  padding-right: 10px; /* Adjust spacing between items */
+}
+
+.form-check {
+  margin-right: 1rem; /* Add space between dark mode switch and nav items */
+}
+
+.form-check-label {
+  margin-left: 0.5rem; /* Adjust the space between the checkbox and label */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    justify-content: space-between; /* Space out items evenly on smaller screens */
+    padding: 0; /* Remove horizontal padding */
+  }
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.employee-management-container {
+  padding: 0;
+  margin: 0;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.employee-table {
+  border-collapse: collapse;
+  width: 100%; /* Make table occupy the entire width of the container */
+  font-size: 16px;
+  border: 1px solid #dddddd; /* Adding border to the table */
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+.employee-table th {
+  background-color: #3399ff;
+  font-weight: bold;
+  color: white;
+}
+
+.employee-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.employee-table tbody tr:hover {
+  background-color: #f0f;
+}

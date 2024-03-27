@@ -1,9 +1,34 @@
+/* Herosection.css */
+
+/* Style for the hero section container */
+.hero-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  user-select: none;
+  background-color: #f0f0f0; /* Set background color for the hero section */
+  overflow: hidden; /* Hide overflow to create the scrolling effect */
+}
+
+/* Style for the image container */
+.image-container {
+  display: flex;
+  width: 100%; /* Ensure images cover the entire width of the container */
+  animation: scrollAnimation 15s linear infinite; /* Scroll animation */
+}
+
+/* Style for individual images */
+.image-container img {
+  width: 100%; /* Make images fill their container horizontally */
+}
+
+/* Animation for scrolling images */
 @keyframes scrollAnimation {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-200%); /* Adjust this value based on the number of images */
-    }
+  0% {
+    transform: translateX(0);
   }
-  
+  100% {
+    transform: translateX(-100%);
+  }
+}
