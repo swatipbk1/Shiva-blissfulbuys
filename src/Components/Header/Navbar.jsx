@@ -5,9 +5,6 @@ import { FaShoppingBag } from 'react-icons/fa';
 import './Navbar.css';
 
           </select>
-          <input placeholder="Search BlissfulBuys" className="search-input" />
-          <div className="search-icon">
-            <BsSearch className="search-glass-icon" />
           </div>
         </div>
         <div className="nav_signin border">
