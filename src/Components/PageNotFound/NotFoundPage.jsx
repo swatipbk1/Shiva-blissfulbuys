@@ -6,10 +6,6 @@ const styles = {
   container: {
     padding: 0,
     margin: 0,
-    boxSizing: 'border-box',
-    backgroundColor: '#006400', // Dark green background color
-    fontFamily: 'Arial, sans-serif',
-    minHeight: '100vh', // Ensure the container takes up at least the full height of the viewport
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
