@@ -1,17 +1,6 @@
 
 
 
-            <BsSearch className="search-glass-icon" />
-          </div>
-        </div>
-        <div className="nav_signin border">
-          <p><span>Hello, Sign in</span></p>
-          <p className="nav-sec">Account & Lists</p>
-        </div>
-        <div className="nav_return border">
-          <a href="../Webpage-down/loader.html"><span>Returns</span></a>
-          <p className="nav-sec">& Orders</p>
-        </div>
         <div className="nav-cart border">
           <BsCart className="cart-icon" />
           <span>Cart</span>
