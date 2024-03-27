@@ -6,10 +6,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-        <div className="navaddress border">
-          <p className="add-first">Deliver to</p>
-          <div className="add-icon"></div>
-          <BsGeoAlt className="geo-icon" />
+        <div cl
           <p className="add-sec">USA</p>
         </div>
         <div className="nav_search">
