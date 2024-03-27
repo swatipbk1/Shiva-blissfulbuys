@@ -4,11 +4,7 @@ import pic from './pic.jpeg'; // Import the image
 
 const styles = {
  
-    flexDirection: 'column',
-    color: '#FFF', // Text color
-    textAlign: 'center',
-  },
-  img: {
+   
     width: '200px',
     height: 'auto',
     borderRadius: '50%',
