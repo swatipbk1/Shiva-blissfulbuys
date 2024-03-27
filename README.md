@@ -83,3 +83,6 @@ This project uses the NewsAPI to fetch top headlines from http"//newsapi.org for
 
 ## License
 This project is licensed under the MIT License.
+
+## Contribution
+Special thanks to Mr. Dylan Comeau and Ms. Constance Nwaigwe for their invaluable guidance, inspiration, and motivation throughout the journey of achieving this real business problem solution. Mr. Dylan Comeau's expertise and insightful advice have played a significant role in shaping the project, while Ms. Constance Nwaigwe's mentorship and support have been instrumental in overcoming challenges and reaching milestones. Their unwavering encouragement and dedication have truly made a difference in completing this project successfully.
