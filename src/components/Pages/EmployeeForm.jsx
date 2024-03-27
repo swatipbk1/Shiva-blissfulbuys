@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types'; // Importing prop-types for prop validation
 import './EmployeeForm.css'; // Importing the CSS file for styling
-// import Navigation from "./Header/Navigation"; // Import Navigation component
-// import Footer from "./Footer/Footer"; // Import Footer component
+
 
 
 const EmployeeForm = ({ addEmployee }) => {
@@ -68,7 +67,7 @@ const EmployeeForm = ({ addEmployee }) => {
     // <Navigation />
     <div className="employee-form-container">
       
-    <h2 className="form-heading">Employee Information Management Tool</h2>
+    <h2 className="form-heading">Empower Your Workforce: Introducing Our Cutting-Edge Employee Information Management Tool</h2>
     <form onSubmit={handleSubmit} className="employee-form">
       <h2>Add Employee</h2>
       <label>

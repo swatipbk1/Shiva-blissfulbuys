@@ -32,7 +32,10 @@ export default function HeroSection() {
         style={{
           display: "flex",
           width: "100%", // Width accommodating all images
-          animation: "scrollAnimation 15s linear infinite" // Scroll animation
+          animation: "scrollAnimation 15s linear infinite", // Scroll animation
+          position: "fixed",
+          top: "0",
+          zIndex: "500" // Ensure the navbar appears above the images
         }}
       >
         {/* Render the images */}

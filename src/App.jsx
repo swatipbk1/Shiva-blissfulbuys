@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
@@ -22,14 +21,22 @@ const App = () => {
   return (
     <Router>
       <div className="app-container">
-        <Navigation addEmployee={addEmployee} />
+        <Navigation />
         <div className="content">
-        <div className="top-heading">
-          <h1>Top Headlines</h1>
-          <h2>Real-Time News Coverage: Latest Updates</h2>
-        </div>
+          <div className="top-heading">
+            <h1>Top Headlines</h1>
+            <h2>Revolutionary Breakthrough: Our Company Unveils Cutting-Edge AI-Powered Product, Dominates Industry Headlines!</h2>
+          </div>
           <Routes>
-            <Route path="/" element={<HeroSection />} />
+            <Route path="/" element={
+              <>
+                <div className="top-heading">
+                  <h1>Top Headlines</h1>
+                  <h2>Revolutionary Breakthrough: Our Company Unveils Cutting-Edge AI-Powered Product, Dominates Industry Headlines!</h2>
+                </div>
+                <HeroSection />
+              </>
+            } />
             <Route path="/Home" element={<HeroSection />} />
             <Route path="/ProductsShowcase" element={<Products />} />
             <Route path="/SalesInsights" element={<SalesReview />} />
@@ -46,5 +53,6 @@ const App = () => {
     </Router>
   );
 };
+
 
 export default App;

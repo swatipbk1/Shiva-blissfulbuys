@@ -109,3 +109,26 @@
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+/* Additional Styles for Enhanced Footer */
+.footer-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111; /* Darker background color */
+  padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+.footer-bottom p {
+  font-size: 1em; /* Adjust font size */
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

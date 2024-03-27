@@ -1,24 +1,23 @@
-
 * {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0; /* Top and bottom margin of 100px, 0 for left and right */
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 200px); /* Adjusting height to maintain centering with margins */
-  background-color: orange; /* Set the background color to orange */
+  height: 100vh;
+  background-color: orange;
 }
 
 .sales-task-todo {
   width: 80%;
-  margin: 50px auto 200px;
-  max-width: 600px;
+  margin: 0 auto;
+  max-width: 800px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -41,7 +40,7 @@ body {
   padding: 8px 15px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #10976a;
   color: #fff;
   cursor: pointer;
 }
@@ -64,7 +63,7 @@ body {
 }
 
 .highlighted {
-  background-color: #ffffcc;
+  background-color: #aaaa21;
 }
 
 .saved-message {
@@ -73,4 +72,22 @@ body {
   padding: 10px;
   border-radius: 4px;
   margin-top: 10px;
+}
+
+.sales-task-todo {
+  width: 80%;
+  margin: 20px auto; /* Add margin to create space around the form */
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Remove border-bottom */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-bottom: none; /* Remove the border-bottom property */
+}
+
+/* Remove padding and margin from top and bottom */
+.sales-task-todo {
+  margin-top: 0;
+  margin-bottom: 0;
 }

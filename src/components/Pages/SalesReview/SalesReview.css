@@ -1,87 +1,88 @@
-/* SalesReview.css */
+.sales-review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0; /* Set all margins to 0 */
+}
 
+.page-title {
+  margin-bottom: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  margin-top:0;
+}
 
-  
-  .sales-review-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 1300px;
-  }
-  
-  .page-title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-  }
-  
-  .filters {
-    margin-bottom: 20px;
-  }
-  
-  .table-container {
-    width: 80%;
-    overflow-x: auto;
-  }
-  
-  .sales-table {
+.filters {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  width: 90%;
+  overflow-x: auto;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #333; /* Dark border */
+}
+
+.sales-table th, .sales-table td {
+  padding: 8px;
+  border: 1px solid #333; /* Dark border */
+  text-align: left;
+}
+
+.sales-table th {
+  background-color: #4CAF50; /* Green background color for headers */
+  color: white; /* White text color for headers */
+  font-weight: bold;
+}
+
+.sales-table th:nth-child(7) {
+  position: relative;
+}
+
+.sales-table td:nth-child(n+5) {
+  text-align: right; /* Align numeric values to the right */
+}
+
+.sales-table td:nth-child(n+5):not(:last-child) {
+  padding-right: 20px; /* Add padding to separate numeric values */
+}
+
+.sort-btn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sales-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.sales-table th,
+.sales-table td {
+  transition: background-color 0.3s ease;
+}
+
+.sales-table tbody tr:hover {
+  background-color: #f0f;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
     width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #333; /* Dark border */
+    max-width: 400px;
   }
-  
-  .sales-table th, .sales-table td {
-    padding: 8px;
-    border: 1px solid #333; /* Dark border */
-    text-align: left;
-  }
-  
-  .sales-table th {
-    background-color: #4CAF50; /* Green background color for headers */
-    color: white; /* White text color for headers */
-    font-weight: bold;
-  }
-  
-  .sales-table th:nth-child(7) {
-    position: relative;
-  }
-  
-  .sales-table td:nth-child(n+5) {
-    text-align: right; /* Align numeric values to the right */
-  }
-  
-  .sales-table td:nth-child(n+5):not(:last-child) {
-    padding-right: 20px; /* Add padding to separate numeric values */
-  }
-  
-  .sort-btn {
-    position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .sales-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .sales-table th,
-  .sales-table td {
-    transition: background-color 0.3s ease;
-  }
-  
-  .sales-table tbody tr:hover {
-    background-color: #f0f;
-  }
-  
-  
-/*  */
+}

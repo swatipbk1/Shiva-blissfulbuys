@@ -3,7 +3,6 @@ import "./SalesTaskTodo.css";
 import Navigation from "./Header/Navigation"; // Import Navigation component
 import Footer from "./Footer/Footer"; // Import Footer component
 
-
 function SalesTaskTodo() {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
@@ -89,75 +88,75 @@ function SalesTaskTodo() {
 
   return (
     <div>
-    {/* <Navigation /> */}
-    <div className="sales-task-todo">
-      <h1>BeetTrack: Streamlined Project Management Tool</h1>
-      <div className="todo-input">
-        <input
-          type="text"
-          placeholder="Add new task"
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-        />
-        <button onClick={addTodo}>Add Task</button>
-      </div>
-      <ul className="todo-list">
-        {todos.map((todo) => (
-          <li
-            key={todo.id}
-            className={highlightedTodoId === todo.id ? "highlighted" : ""}
-          >
-            <input
-              type="checkbox"
-              checked={todo.complete}
-              onChange={() => toggleTodoCompletion(todo.id)}
-            />
-            {todo.editing ? (
-              <>
-                <input
-                  type="text"
-                  value={todo.text}
-                  onChange={(e) => editTodo(todo.id, e.target.value)}
-                />
-                <button onClick={() => saveTodo(todo.id, todo.text)}>
-                  Save
-                </button>
-              </>
-            ) : (
-              <>
-                <span className={todo.complete ? "completed" : ""}>
-                  {todo.text}
-                </span>
-                <button
-                  onClick={() => deleteTodo(todo.id)}
-                  disabled={!todo.complete}
-                >
-                  Delete
-                </button>
-                <button
-                  onClick={() =>
-                    setTodos(
-                      todos.map((t) =>
-                        t.id === todo.id ? { ...t, editing: true } : t
+      {/* <Navigation /> */}
+      <h1 className="page-title">Master Your Projects: Introducing Our Game-Changing Project Management Tool!</h1>
+      <div className="sales-task-todo">
+        <div className="todo-input">
+          <input
+            type="text"
+            placeholder="Add new task"
+            value={newTodo}
+            onChange={(e) => setNewTodo(e.target.value)}
+          />
+          <button onClick={addTodo}>Add Task</button>
+        </div>
+        <ul className="todo-list">
+          {todos.map((todo) => (
+            <li
+              key={todo.id}
+              className={highlightedTodoId === todo.id ? "highlighted" : ""}
+            >
+              <input
+                type="checkbox"
+                checked={todo.complete}
+                onChange={() => toggleTodoCompletion(todo.id)}
+              />
+              {todo.editing ? (
+                <>
+                  <input
+                    type="text"
+                    value={todo.text}
+                    onChange={(e) => editTodo(todo.id, e.target.value)}
+                  />
+                  <button onClick={() => saveTodo(todo.id, todo.text)}>
+                    Save
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span className={todo.complete ? "completed" : ""}>
+                    {todo.text}
+                  </span>
+                  <button
+                    onClick={() => deleteTodo(todo.id)}
+                    disabled={!todo.complete}
+                  >
+                    Delete
+                  </button>
+                  <button
+                    onClick={() =>
+                      setTodos(
+                        todos.map((t) =>
+                          t.id === todo.id ? { ...t, editing: true } : t
+                        )
                       )
-                    )
-                  }
-                >
-                  Edit
-                </button>
-              </>
-            )}
-            <span>Project: {todo.project}</span>
-            <span>Due Date: {todo.dueDate}</span>
-            <span>Priority: {todo.priority}</span>
-            <span>Description: {todo.description}</span>
-          </li>
-        ))}
-      </ul>
-      {savedMessage && <div className="saved-message">{savedMessage}</div>}
+                    }
+                  >
+                    Edit
+                  </button>
+                </>
+              )}
+              <span>Project: {todo.project}</span>
+              <span>Due Date: {todo.dueDate}</span>
+              <span>Priority: {todo.priority}</span>
+              <span>Description: {todo.description}</span>
+            </li>
+          ))}
+        </ul>
+        {savedMessage && <div className="saved-message">{savedMessage}</div>}
+      </div>
+      {/* <Footer /> */}
     </div>
-    {/* <Footer /> */}
-  </div>
   );
 }
 

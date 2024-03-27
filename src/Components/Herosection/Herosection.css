@@ -11,16 +11,30 @@
   overflow: hidden; /* Hide overflow to create the scrolling effect */
 }
 
+/* Style for the heading */
+.heading {
+  position: absolute;
+  top: 50%; /* Align heading to the vertical center */
+  left: 50%; /* Align heading to the horizontal center */
+  transform: translate(-50%, -50%); /* Center the heading */
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Make the heading bold */
+  color: #333; /* Set text color */
+  z-index: 1; /* Ensure the heading appears above the images */
+}
+
 /* Style for the image container */
 .image-container {
   display: flex;
   width: 100%; /* Ensure images cover the entire width of the container */
+  margin-top: 50px; /* Add margin from the top */
   animation: scrollAnimation 15s linear infinite; /* Scroll animation */
 }
 
 /* Style for individual images */
 .image-container img {
-  width: 100%; /* Make images fill their container horizontally */
+  width: 200px; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Animation for scrolling images */

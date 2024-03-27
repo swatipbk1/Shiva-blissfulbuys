@@ -98,7 +98,7 @@ const EmployeeManagement = () => {
     // <div>
     // <Navigation />
     <div className="sales-review-container">
-      <h1 className="page-title">HRIS System for Human Resource Management</h1>
+      <h1 className="page-title">Unlocking Efficiency: Introducing Our Dynamic HRIS System for Seamless Human Resource Management</h1>
       <div className="filters">
         <label>
           Department Filter:

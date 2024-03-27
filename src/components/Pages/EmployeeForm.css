@@ -1,53 +1,41 @@
-
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: linear-gradient(to right, #ffcccc, #99ccff); /* Light pink to light blue gradient */
-  }
-  
-  .employee-form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px; /* Adjust margin from top */
-  }
-  
-  .form-heading {
-    margin-bottom: 20px; /* Add margin between heading and form */
-  }
-  
-  .employee-form {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-heading {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #ffcccc, #99ccff); /* Light pink to light blue gradient */
+}
+
+.employee-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px; /* Adjust margin from top */
+}
+
+.form-heading {
+  margin-bottom: 20px; /* Add margin between heading and form */
+  font-size: 40px; /* Increase font size */
+  color: #333; /* Change text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for attractiveness */
+  text-align: center; /* Center align the heading */
+}
 
 .employee-form {
-  max-width: 400px;
-  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Add border */
+  max-width: 400px; /* Limit width */
+  margin: 0 auto; /* Center align */
 }
 
 .employee-form h2 {
-  margin-top: 0;
+  margin-top: 200px;
   margin-bottom: 20px;
   font-size: 1.5rem;
   text-align: center;
@@ -72,7 +60,7 @@
 .employee-form button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #c41a1a;
   color: #fff;
   border: none;
   border-radius: 5px;

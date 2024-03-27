@@ -63,6 +63,7 @@ const BusinessNews = () => {
     <div>
     {/* <Navigation /> */}
     <div className="mainDiv">
+      <h1 className="title">Fueling Ambition: Stay Ahead with Engaging Business News to Inspire and Empower Employees!</h1>
       {loading ? (
         <img src={spinner} alt="Loading..." />
       ) : (

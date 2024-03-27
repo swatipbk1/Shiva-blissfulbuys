@@ -97,7 +97,7 @@ const SalesReview = () => {
     <div>
     {/* <Navigation /> */}
     <div className="sales-review-container">
-      <h1 className="page-title">Sales Report</h1>
+      <h1 className="page-title">Skyrocketing Success: Unveiling the All-Time Sales Report Across Every Product!</h1>
       {/* Filter UI */}
       <div className="filters">
         <label>

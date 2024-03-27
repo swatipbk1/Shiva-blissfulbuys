@@ -62,7 +62,14 @@ const Products = () => {
   return (
     <div>
       {/* <Navigation /> */}
-      <h1 className="text-center">Products Showcase</h1>
+      <h1 className="text-center">Unveiling Tomorrow's Technology Today: Dive into Our Thrilling Products Showcase!"
+
+
+
+
+
+
+</h1>
       <br></br>
       <br></br>
       <div className="row justify-content-center">

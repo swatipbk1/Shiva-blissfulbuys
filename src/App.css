@@ -1,21 +1,41 @@
 * {
-  margin: 0;
+  margin-top: 160px;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 .top-heading {
+  width: calc(100% - 40px); /* Make it span the width minus 40px padding */
+  z-index: 1000; /* Set a high z-index to ensure it appears above other content */
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 40px;
+  padding-top: 30px; /* Adjust padding to make it closer to the header */
+  padding-bottom: 30px; /* Adjust padding as needed */
   background: #f7f7f7;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-top: 20px;
   transition: background-color 0.3s ease; /* Adding transition effect */
 }
+
+.top-heading:hover {
+  background: #ffa500; /* Light orange color on hover */
+}
+
+.top-heading h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.top-heading h2 {
+  font-style: italic;
+  color: #069941;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 
 .top-heading:hover {
   background: #ffa500; /* Light orange color on hover */
