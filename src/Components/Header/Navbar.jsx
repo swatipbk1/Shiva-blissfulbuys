@@ -4,14 +4,6 @@ import { BsSearch, BsCart, BsGeoAlt } from "react-icons/bs";
 import { FaShoppingBag } from 'react-icons/fa';
 import './Navbar.css';
 
-const Navbar = () => {
-  return (
-        <div cl
-          <p className="add-sec">USA</p>
-        </div>
-        <div className="nav_search">
-          <select className="search-select">
-            <option>All</option>
           </select>
           <input placeholder="Search BlissfulBuys" className="search-input" />
           <div className="search-icon">
