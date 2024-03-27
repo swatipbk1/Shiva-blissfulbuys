@@ -6,10 +6,7 @@ import './Navbar.css';
 
           </select>
           </div>
-        </div>
-          <p cl
-        </div>
-        <div className="nav-blissfulbuys border">
+        <
           <FaShoppingBag className="blissfulbuys-icon" />
           <span>BlissfulBuys</span>
         </
