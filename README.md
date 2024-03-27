@@ -79,7 +79,7 @@ react-router-dom: ^6.22.3
 react-top-loading-bar: ^2.3.1
 theme-ui: ^0.16.2
 ## Credits
-This project uses the NewsAPI to fetch top headlines from http"//newsapi.org for our CNN News APP.
+This project uses the NewsAPI to fetch top headlines from http"//newsapi.org for our News APP.
 
 ## License
 This project is licensed under the MIT License.
