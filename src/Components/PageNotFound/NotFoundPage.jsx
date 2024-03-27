@@ -3,12 +3,7 @@ import React, { useEffect, useState } from 'react';
 import pic from './pic.jpeg'; // Import the image
 
 const styles = {
-  container: {
-    padding: 0,
-    margin: 0,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+ 
     flexDirection: 'column',
     color: '#FFF', // Text color
     textAlign: 'center',
