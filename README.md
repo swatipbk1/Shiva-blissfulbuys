@@ -2,6 +2,8 @@
 ## SHIVA Enterprises - React Frontend
 Welcome to SHIVA Enterprises, a comprehensive platform tailored to address the intricate needs of modern businesses in optimizing their workforce, achieving sales milestones, and fostering a conducive environment for internal processes. Designed with precision and innovation, our website serves as a beacon for companies striving to navigate the complex terrain of theoretical employee management, strategic sales goal attainment, and holistic business efficacy. We understand the paramount importance of aligning internal operations with overarching objectives, and our suite of tools and resources is meticulously crafted to empower organizations in realizing their targets with unparalleled efficiency and effectiveness. Embark on a transformative journey with us as we redefine the landscape of internal company processes, enabling you to conquer challenges and unlock the full potential of your enterprise.
 
+##Insightful Decision-making: Gain valuable insights for decision-making with SHIVA Enterprises, providing businesses with the tools they need to make informed decisions and drive success.
+
 ## Scalability and Customization
 Scalability:
 Modular Components: The website is built using modular components, making it easy to scale and add new features as your business grows. Each component serves a specific purpose and can be extended or modified independently.
