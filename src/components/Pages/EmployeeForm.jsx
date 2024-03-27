@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types'; // Importing prop-types for prop validation
 import './EmployeeForm.css'; // Importing the CSS file for styling
 
-
-
 const EmployeeForm = ({ addEmployee }) => {
   const [formData, setFormData] = useState({
     employee_id: '',
@@ -22,12 +20,44 @@ const EmployeeForm = ({ addEmployee }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    let updatedValue = value;
+
+    // Validation checks
+    switch (name) {
+      case 'age':
+        // Allow only numbers
+        updatedValue = value.replace(/\D/, '');
+        break;
+      case 'mobile':
+        // Allow only numbers and maximum length of 10
+        updatedValue = value.replace(/\D/g, '').slice(0, 10);
+        break;
+      // Remove email validation case to accept any input value
+      // Add more cases for additional fields if needed
+      default:
+        break;
+    }
+
+    // Set the updated value to state
+    setFormData({ ...formData, [name]: updatedValue });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Check if any required field is empty or invalid
+    for (const key in formData) {
+      if (formData.hasOwnProperty(key) && formData[key] === '') {
+        alert(`Please fill in ${key.replace('_', ' ')} field.`);
+        return;
+      }
+    }
+
+    // Add additional validation checks if needed
+
+    // Submit the form if all checks pass
     addEmployee(formData);
+
     // Clear form fields after submission
     setFormData({
       employee_id: '',
@@ -43,6 +73,7 @@ const EmployeeForm = ({ addEmployee }) => {
       salary: '',
       department_id: ''
     });
+
     // Posting form data to backend
     saveUser();
   };
@@ -63,66 +94,61 @@ const EmployeeForm = ({ addEmployee }) => {
   };
 
   return (
-    // <div>
-    // <Navigation />
     <div className="employee-form-container">
-      
-    <h2 className="form-heading">Empower Your Workforce: Introducing Our Cutting-Edge Employee Information Management Tool</h2>
-    <form onSubmit={handleSubmit} className="employee-form">
-      <h2>Add Employee</h2>
-      <label>
-        Employee ID:
-        <input type="text" name="employee_id" value={formData.employee_id} onChange={handleChange} />
-      </label>
-      <label>
-        Name:
-        <input type="text" name="employee_name" value={formData.employee_name} onChange={handleChange} />
-      </label>
-      <label>
-        Age:
-        <input type="text" name="age" value={formData.age} onChange={handleChange} />
-      </label>
-      <label>
-        Job Title:
-        <input type="text" name="job_title" value={formData.job_title} onChange={handleChange} />
-      </label>
-      <label>
-        Reporting Manager:
-        <input type="text" name="reporting_manager" value={formData.reporting_manager} onChange={handleChange} />
-      </label>
-      <label>
-        Employee Type:
-        <input type="text" name="employee_type" value={formData.employee_type} onChange={handleChange} />
-      </label>
-      <label>
-        Employee Status:
-        <input type="text" name="employee_status" value={formData.employee_status} onChange={handleChange} />
-      </label>
-      <label>
-        Mobile:
-        <input type="text" name="mobile" value={formData.mobile} onChange={handleChange} />
-      </label>
-      <label>
-        Email:
-        <input type="text" name="email" value={formData.email} onChange={handleChange} />
-      </label>
-      <label>
-        Address:
-        <input type="text" name="address" value={formData.address} onChange={handleChange} />
-      </label>
-      <label>
-        Salary:
-        <input type="text" name="salary" value={formData.salary} onChange={handleChange} />
-      </label>
-      <label>
-        Department ID:
-        <input type="text" name="department_id" value={formData.department_id} onChange={handleChange} />
-      </label>
-      <button type="submit">Submit</button>
-    </form>
+      <h2 className="form-heading">Empower Your Workforce: Introducing Our Cutting-Edge Employee Information Management Tool</h2>
+      <form onSubmit={handleSubmit} className="employee-form">
+        <h2>Add Employee</h2>
+        <label>
+          Employee ID:
+          <input type="text" name="employee_id" value={formData.employee_id} onChange={handleChange} />
+        </label>
+        <label>
+          Name:
+          <input type="text" name="employee_name" value={formData.employee_name} onChange={handleChange} />
+        </label>
+        <label>
+          Age:
+          <input type="text" name="age" value={formData.age} onChange={handleChange} />
+        </label>
+        <label>
+          Job Title:
+          <input type="text" name="job_title" value={formData.job_title} onChange={handleChange} />
+        </label>
+        <label>
+          Reporting Manager:
+          <input type="text" name="reporting_manager" value={formData.reporting_manager} onChange={handleChange} />
+        </label>
+        <label>
+          Employee Type:
+          <input type="text" name="employee_type" value={formData.employee_type} onChange={handleChange} />
+        </label>
+        <label>
+          Employee Status:
+          <input type="text" name="employee_status" value={formData.employee_status} onChange={handleChange} />
+        </label>
+        <label>
+          Mobile:
+          <input type="text" name="mobile" value={formData.mobile} onChange={handleChange} />
+        </label>
+        <label>
+          Email:
+          <input type="text" name="email" value={formData.email} onChange={handleChange} />
+        </label>
+        <label>
+          Address:
+          <input type="text" name="address" value={formData.address} onChange={handleChange} />
+        </label>
+        <label>
+          Salary:
+          <input type="text" name="salary" value={formData.salary} onChange={handleChange} />
+        </label>
+        <label>
+          Department ID:
+          <input type="text" name="department_id" value={formData.department_id} onChange={handleChange} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    //  <Footer />
-    //  </div>
   );
 };
 
