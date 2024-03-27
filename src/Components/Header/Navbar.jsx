@@ -7,9 +7,7 @@ import './Navbar.css';
           </select>
           </div>
         </div>
-          <p className="nav-sec">& Orders</p>
-        </div>
-        <div className="nav-cart border">
+          <p cla
           <BsCart className="cart-icon" />
           <span>Cart</span>
         </div>
