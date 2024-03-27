@@ -1,15 +1,7 @@
 
 
 
-import React from 'react';
-import { BsSearch, BsCart, BsGeoAlt } from "react-icons/bs";
-import { FaShoppingBag } from 'react-icons/fa';
-import './Navbar.css';
-
-const Navbar = () => {
-  return (
-    <header className="header">
-      <div className="navbar">
+impo
         <div className="nav-logo border">
           <div className="logo">BlissfulBuys</div>
         </div>
