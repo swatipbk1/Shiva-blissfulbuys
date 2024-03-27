@@ -1,22 +1,6 @@
 
 
 
-impo
-        <div className="nav-logo border">
-          <div className="logo">BlissfulBuys</div>
-        </div>
-        <div className="navaddress border">
-          <p className="add-first">Deliver to</p>
-          <div className="add-icon"></div>
-          <BsGeoAlt className="geo-icon" />
-          <p className="add-sec">USA</p>
-        </div>
-        <div className="nav_search">
-          <select className="search-select">
-            <option>All</option>
-          </select>
-          <input placeholder="Search BlissfulBuys" className="search-input" />
-          <div className="search-icon">
             <BsSearch className="search-glass-icon" />
           </div>
         </div>
